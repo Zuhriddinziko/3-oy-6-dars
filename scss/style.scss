@@ -12,7 +12,7 @@ body {
   font-family: "Lato";
   font-family: "Poppins";
   font-family: "Oswald";
-  
+
 }
 
 .continer {
@@ -23,14 +23,18 @@ body {
 
 .header {
   width: 100%;
+  display: inline-block;
   background-color: #ffffff;
   margin-bottom: 100px;
+ position: relative;
+ top: -20px;
   margin: 0 auto;
 }
 
 .header-continer {
+  display: inline-block;
   width: 100%;
-  /*width: 1139px;*/
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -47,7 +51,8 @@ body {
   .logo {
     width: 149px;
     height: 47px;
-    padding-right: 420px;
+    margin-right: 250px;
+   
   }
 
   div {
@@ -64,11 +69,26 @@ body {
       list-style: none;
       display: flex;
       flex-direction: row;
-      gap: 42px;
+      gap: 20px;
       padding-right: 42px;
 
       a {
+
+        font-family: "Poppins";
+        height: 56px;
+        border-radius: 43px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        transition: all 0.5s;
         color: #000000;
+
+
+        &:hover {
+
+
+          color: #78ec74;
+        }
       }
     }
   }
@@ -84,18 +104,24 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
+  transition: all 0.5s;
   color: #ffffff;
+
+  &:hover {
+    background-color: #0b330a;
+  }
 }
 
 main {
   padding-top: 200px;
-  margin-top: 200px;
+  margin-top: 500px;
   margin: auto;
   width: 100%;
-  max-width: 1981px;
-  background-image: url("../image/bagraund1.png");
+ 
+  background-image: linear-gradient(to right, rgba(237, 255, 242)55%, rgba(237, 255, 242)25%, rgba(124, 124, 124, 0)), url('../image/bagraund1.png');
   background-repeat: no-repeat;
-  background-position: right 100px;
+  background-position: left, right;
+  background-size: 60%, 75%;
 }
 
 .main-continer {
@@ -129,7 +155,11 @@ main {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding-bottom: 60px;
+    
+    position: relative;
+    z-index: 3;
+
+
 
     div {
       width: 16px;
@@ -137,7 +167,7 @@ main {
       border-radius: 50%;
       background-color: #ffffff;
 
-      &hower {
+      &:hover {
         width: 28px;
         height: 28px;
         border-radius: 50%;
@@ -209,6 +239,7 @@ main {
       z-index: 1;
     }
   }
+
   .oldi {
     padding: 19px 20px;
     font-family: "Oswald";
@@ -221,16 +252,19 @@ main {
     justify-content: center;
     color: #ffffff;
     z-index: 0;
+
     b {
       font-weight: 700;
       font-size: 34px;
       line-height: 38px;
     }
+
     p {
       font-weight: 700;
       font-size: 17px;
       line-height: 46px;
     }
+
     position: absolute;
     top: 400px;
     left: 493px;
@@ -319,6 +353,7 @@ main {
       width: 277px;
       color: #363739;
     }
+
     p {
       margin-top: 17px;
       font-weight: 400;
@@ -353,6 +388,7 @@ main {
       width: 277px;
       color: #363739;
     }
+
     p {
       margin-top: 17px;
       font-weight: 400;
@@ -363,11 +399,13 @@ main {
     }
   }
 }
+
 .conpact {
   position: relative;
   background-color: #3646d9;
- 
+
 }
+
 .conpact-continer {
   display: flex;
   flex-direction: row;
@@ -377,6 +415,7 @@ main {
   align-items: center;
   padding-top: 116px;
   position: relative;
+
   .contin {
     .bir {
       position: absolute;
@@ -385,6 +424,7 @@ main {
       z-index: 0;
       margin: 0 auto;
     }
+
     .ikki {
       position: absolute;
       left: 660px;
@@ -392,6 +432,7 @@ main {
       margin: 0 auto;
       z-index: 0;
     }
+
     .uch {
       position: absolute;
       left: 850px;
@@ -400,6 +441,7 @@ main {
       z-index: 0;
     }
   }
+
   .arra {
     width: 751px;
     height: 583px;
@@ -414,6 +456,7 @@ main {
       color: #ffffff;
       margin-bottom: 12px;
     }
+
     h2 {
       font-weight: 700;
       font-size: 46px;
@@ -421,6 +464,7 @@ main {
       color: #ffffff;
       margin-bottom: 20px;
     }
+
     span {
       font-weight: 400;
       font-size: 18px;
@@ -429,6 +473,7 @@ main {
       color: #ffffff;
       margin-bottom: 85px;
     }
+
     ul {
       margin-top: 64px;
       width: 500px;
@@ -438,6 +483,7 @@ main {
       line-height: 45px;
       color: #ffffff;
       margin-bottom: 120px;
+
       li {
         display: flex;
         flex-direction: row;
@@ -445,5 +491,122 @@ main {
         gap: 19px;
       }
     }
+  }
+}
+
+.mission {
+  background-color: #ffffff;
+
+
+
+}
+
+.mission__continer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+ 
+  gap: 43px;
+  padding-top: 131px;
+  padding-bottom: 133px;
+  .birimg {
+    position: absolute;
+    left: -174px;
+    top: 84px;
+    width: 500px;
+    height: 550px;
+    z-index: 0;
+  }
+
+  .ikkimg {
+    position: absolute;
+    left: -464px;
+    top: 0px;
+    width: 1158px;
+    height: 1229px;
+
+  }
+
+  .misimg {
+    padding: -210px;
+    display: flex;
+    z-index: 2;
+    width: 690px;
+    height: 744px;
+    margin-left: -50px;
+    
+  }
+
+  .our {
+    z-index: 2;
+    padding-top: 101px;
+    width: 630px;
+
+    span {
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 23px;
+      font-family: "Poppins";
+      color: #3EA83B;
+      padding-bottom: 28px;
+    }
+
+    h2 {
+      width: 539px;
+      margin-top: 24px;
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 23px;
+      font-family: "Poppins";
+      margin-bottom: 58px;
+      color: #363739;
+    }
+
+  .wood{
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    span{
+     
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+      font-family: "Lato";
+      color: #363739;
+      margin-bottom: 10px;
+
+    }
+  } 
+  }
+  .oldii {
+    padding: 19px 20px;
+    font-family: "Oswald";
+    width: 136px;
+    height: 148px;
+    border-radius: 25px;
+    background-color: #3646d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    z-index: 3;
+
+    b {
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 38px;
+    }
+
+    p {
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 46px;
+    }
+
+    position: absolute;
+    top: 400px;
+    left: 425px;
   }
 }
